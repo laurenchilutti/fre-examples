@@ -31,7 +31,7 @@ platforms:
      container2base: "docker-archive:/gpfs/f5/gfdl_f/world-shared/frecontainers/hpc-me_intel2024.2rte.tar"
    - name: hpcme.intel25
      compiler: intel
-     RUNenv: [". /opt/spack/share/spack/setup-env.sh", "cd /opt/spack-environment/", "spack --verbose env activate ."]
+     RUNenv: [". /opt/spack/share/spack/setup-env.sh", "spack --verbose env activate /opt/spack-environment/"]
      modelRoot: /apps
      container: True
      containerBuild: "podman"
